@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#050912">
+    <meta name="description"
+          content="RAHUL V — Python Developer, Full-Stack Developer, and UI/UX Designer.">
+
+    <title>RAHUL V | Developer Portfolio</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+
+<body>
+
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <header class="navbar">
+        <a class="logo" href="#home">RAHUL <span>V</span></a>
+
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Internship</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="languageToggle" class="language-toggle" type="button">
+            தமிழ்
+        </button>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="home" class="hero section">
+            <div class="hero-content reveal">
+
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    COMPUTER SCIENCE ENGINEERING
+                </p>
+
+                <h1>
+                    Hello, I'm <span class="gradient-text">RAHUL V</span>
+                </h1>
+
+                <h2>
+                    I'm a <span id="typingText">Python Developer</span><span class="typing-cursor">|</span>
+                </h2>
+
+                <p class="hero-description">
+                    From Ideas to Intelligent Applications.
+                    I explore Artificial Intelligence, software development,
+                    and futuristic technology to turn ideas into intelligent
+                    applications.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="button button-primary">
+                        Explore My Work ↗
+                    </a>
+
+                    <a href="#contact" class="button button-secondary">
+                        Let's Connect
+                    </a>
+                </div>
+
+                <!-- GitHub and LinkedIn -->
+                <div class="social-links">
+                    <a href="https://github.com/Raghul2201"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/raghul-v-/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                </div>
+
+                <div class="hero-tags">
+                    <span>Python</span>
+                    <span>Full-Stack Development</span>
+                    <span>AI / ML</span>
+                    <span>UI/UX</span>
+                </div>
+
+            </div>
+
+            <div class="hero-visual reveal" aria-label="Abstract technology animation">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="orbit orbit-three"></div>
+
+                <div class="core">
+                    <div class="core-inner">RV</div>
+                </div>
+
+                <span class="floating-label label-one">PYTHON</span>
+                <span class="floating-label label-two">ARTIFICIAL INTELLIGENCE</span>
+                <span class="floating-label label-three">INNOVATION</span>
+            </div>
+
+            <a href="#about" class="scroll-indicator"
+               aria-label="Scroll to About section">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About <span class="gradient-text">Me</span></h2>
+                <p>A developer driven by curiosity and continuous learning.</p>
+            </div>
+
+            <div class="about-grid">
+
+                <article class="glass-card reveal">
+                    <h3>My Journey</h3>
+
+                    <p>
+                        I'm a Computer Science Engineering student interested
+                        in Python development, full-stack engineering,
+                        Artificial Intelligence, and UI/UX design.
+                    </p>
+
+                    <p>
+                        I enjoy building useful applications, experimenting
+                        with voice assistants, and exploring futuristic
+                        interfaces that combine technology with usability.
+                    </p>
+
+                    <p class="highlight-text">
+                        Try. Fail. Learn. Repeat.
+                    </p>
+                </article>
+
+                <article class="glass-card education-card reveal">
+                    <p class="eyebrow">EDUCATION</p>
+
+                    <h3>B.E. Computer Science and Engineering</h3>
+
+                    <p>Bharathidasan Engineering College</p>
+
+                    <div class="education-score">
+                        <span>CGPA</span>
+                        <strong>8.5</strong>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">MY TOOLKIT</p>
+                <h2>Technical <span class="gradient-text">Skills</span></h2>
+                <p>Technologies I use while learning and building.</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="glass-card skill-card reveal">
+                    <span class="skill-icon">Py</span>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                    <div class="skill-track">
+                        <span style="--level: 75%"></span>
+                    </div>
+                </article>
+
+                <article class="glass-card skill-card reveal">
+                    <span class="skill-icon">&lt;/&gt;</span>
+                    <h3>HTML &amp; CSS</h3>
+                    <p>Intermediate</p>
+                    <div class="skill-track">
+                        <span style="--level: 72%"></span>
+                    </div>
+                </article>
+
+                <article class="glass-card skill-card reveal">
+                    <span class="skill-icon">JS</span>
+                    <h3>JavaScript</h3>
+                    <p>Currently learning</p>
+                    <div class="skill-track">
+                        <span style="--level: 40%"></span>
+                    </div>
+                </article>
+
+                <article class="glass-card skill-card reveal">
+                    <span class="skill-icon">AI</span>
+                    <h3>AI / Machine Learning</h3>
+                    <p>Intermediate</p>
+                    <div class="skill-track">
+                        <span style="--level: 65%"></span>
+                    </div>
+                </article>
+
+                <article class="glass-card skill-card reveal">
+                    <span class="skill-icon">UX</span>
+                    <h3>UI/UX Design</h3>
+                    <p>Design and prototyping</p>
+                    <div class="skill-track">
+                        <span style="--level: 60%"></span>
+                    </div>
+                </article>
+
+                <article class="glass-card skill-card reveal">
+                    <span class="skill-icon">DB</span>
+                    <h3>Backend &amp; Data</h3>
+                    <p>Flask, SQLite, Pandas, NumPy</p>
+                    <div class="skill-track">
+                        <span style="--level: 60%"></span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">SELECTED WORK</p>
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <p>Exploring ideas through software and intelligent applications.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- JARVIS -->
+                <article class="glass-card project-card reveal">
+
+                    <div class="project-top">
+                        <span class="project-number">01</span>
+                        <span class="project-status">PROTOTYPE</span>
+                    </div>
+
+                    <div class="project-symbol">⌘</div>
+
+                    <h3>JARVIS</h3>
+                    <p class="project-subtitle">Personal AI Assistant</p>
+
+                    <p>
+                        A personal assistant prototype exploring AI-powered
+                        question answering, voice interaction, computer
+                        automation, and system control.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>AI</span>
+                        <span>Automation</span>
+                    </div>
+
+                    <a href="https://github.com/Raghul2201/Rahul-Portfolio"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Portfolio on GitHub
+                    </a>
+
+                    <button class="button button-secondary project-details"
+                            data-project="jarvis" type="button">
+                        Explore Project ↗
+                    </button>
+
+                </article>
+
+                <!-- LAURA -->
+                <article class="glass-card project-card reveal">
+
+                    <div class="project-top">
+                        <span class="project-number">02</span>
+                        <span class="project-status status-progress">IN DEVELOPMENT</span>
+                    </div>
+
+                    <div class="project-symbol">◉</div>
+
+                    <h3>LAURA</h3>
+                    <p class="project-subtitle">Siri-Inspired Mobile AI Assistant</p>
+
+                    <p>
+                        A mobile AI assistant concept combining voice
+                        interaction, wake-word activation, and a futuristic
+                        animated interface.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Android</span>
+                        <span>Voice AI</span>
+                        <span>UI</span>
+                    </div>
+
+                    <button class="button button-secondary project-details"
+                            data-project="laura" type="button">
+                        Explore Project ↗
+                    </button>
+
+                </article>
+
+                <!-- EMAIL SPAM DETECTION -->
+                <article class="glass-card project-card reveal">
+
+                    <div class="project-top">
+                        <span class="project-number">03</span>
+                        <span class="project-status">COMPLETED</span>
+                    </div>
+
+                    <div class="project-symbol">✉</div>
+
+                    <h3>Email Spam Detection</h3>
+                    <p class="project-subtitle">Machine Learning</p>
+
+                    <p>
+                        A machine learning model that classifies messages
+                        as spam or ham using CountVectorizer and
+                        Multinomial Naive Bayes.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Scikit-learn</span>
+                        <span>ML</span>
+                    </div>
+
+                    <button class="button button-secondary project-details"
+                            data-project="spam" type="button">
+                        Explore Project ↗
+                    </button>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- INTERNSHIP -->
+        <section id="experience" class="section">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">PRACTICAL EXPERIENCE</p>
+                <h2>Internship <span class="gradient-text">Experience</span></h2>
+            </div>
+
+            <article class="glass-card experience-card reveal">
+
+                <p class="eyebrow">15 JUNE – 15 JULY 2026</p>
+
+                <h3>Data Science Intern</h3>
+                <p class="experience-company">Oasis Infobyte</p>
+
+                <p>
+                    Completed a data science internship project focused on
+                    classifying text messages using machine learning.
+                </p>
+
+                <h4>Email Spam Detection Using Machine Learning</h4>
+
+                <p>
+                    Used text vectorization and a Multinomial Naive Bayes
+                    classifier to categorize messages as spam or ham.
+                </p>
+
+                <div class="tech-tags">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Scikit-learn</span>
+                    <span>Jupyter Notebook</span>
+                </div>
+
+            </article>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">LET'S BUILD SOMETHING</p>
+                <h2>Get In <span class="gradient-text">Touch</span></h2>
+                <p>Have a project, opportunity, or interesting idea? Let's connect.</p>
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="glass-card contact-info reveal">
+
+                    <h3>Let's talk</h3>
+
+                    <p>
+                        I'm interested in software development, AI,
+                        and opportunities to learn and collaborate.
+                    </p>
+
+                    <div class="contact-item">
+                        <span>Email</span>
+                        <a href="mailto:raghulraghul5537@gmail.com">
+                            raghulraghul5537@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>Location</span>
+                        <p>Ambur, Tamil Nadu, India</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>GitHub</span>
+                        <a href="https://github.com/Raghul2201"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Raghul2201 ↗
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/raghul-v-/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Raghul V ↗
+                        </a>
+                    </div>
+
+                </div>
+
+                <form id="contactForm" class="glass-card contact-form reveal">
+
+                    <label for="name">Your name</label>
+                    <input id="name" name="name" type="text"
+                           maxlength="100" autocomplete="name" required>
+
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email"
+                           maxlength="254" autocomplete="email" required>
+
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text"
+                           maxlength="150" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"
+                              rows="5" maxlength="5000" required></textarea>
+
+                    <button class="button button-primary" type="submit">
+                        Send Message ↗
+                    </button>
+
+                    <p id="formStatus" class="form-status" role="status"></p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <a class="logo" href="#home">RAHUL <span>V</span></a>
+
+        <p>Designed &amp; Built by RAHUL V</p>
+
+        <a href="#home">Back to top ↑</a>
+
+    </footer>
+
+    <!-- PROJECT DETAILS POPUP -->
+    <dialog id="projectDialog" class="project-dialog">
+
+        <button id="closeDialog" class="close-dialog"
+                type="button" aria-label="Close project details">×</button>
+
+        <p class="eyebrow">PROJECT DETAILS</p>
+
+        <h2 id="dialogTitle"></h2>
+
+        <p id="dialogDescription"></p>
+
+        <h3>Features &amp; Direction</h3>
+
+        <ul id="dialogFeatures"></ul>
+
+        <p id="dialogTech" class="dialog-tech"></p>
+
+    </dialog>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
